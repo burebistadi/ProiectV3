@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./proiect.css">
     
+    
+    
     <title>League of Legends FanMade</title>
 </head>
 
-<body>
+<body onload="showAlert()">
     
 <!-- div.fixed {
   position: fixed;
@@ -28,18 +30,52 @@
   <nav>League of Legends</nav>
   <p><a href="https://eu.lolesports.com/en">Official Site</a></p>
     <p><a href="./videos.html">Videoclipuri de prezentare</a>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus.</p>
   <section><h2>Lorem</h2></section>
-  <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+  <p id="p2">Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
   <footer>
       <p class="copyright">© random ng</p>
   </footer>
+
+  <button onclick="myFunction()">Click me</button>
+
+  <!-- <form action="/action_page.php" method="post">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+  </form> -->
+  <form name="myForm" action="http://localhost:3000/posts"
+  onsubmit="return validateForm()" method="post">
+  Give Me A Grade <input type="text" name="Grade" required>
+  <input type="submit" value="Submit">
+  </form>
+
+  
+  
   <!-- <button id="butt">Pause</button> -->
   </div>
+  
   <!-- <center><div class="fixed"> <a href="/proiect.html"><button type="button">Pagina Principala</button></a>
     <button type="button"> <a href="/videos.html"></a>Pagina Secundara</button>
     </div></center> -->
 
-  <script src="./proiect.js"></script>
+    <script>
+    // document.getElementById("p2").style.color = "blue";
+    //   document.getElementById("p2").style.fontFamily = "Arial";
+    //   document.getElementById("p2").style.fontSize = "larger";
+    //   window.addEventListener("keydown",checkKeyPress,false);
+    //   function checkKeyPress(key){
+    //     if(key.keyCode=="65"){document.getElementById('polina').style.visibility='hidden';
+    //       alert("The 'a' letter key has been pressed!");
+    //       // else if(key.keyCode=="66"){document.getElementById('polina').style.visibility='visible';
+    //       // alert("The 'b' letter key has been pressed!");
+    //   }
+    //     }
+      // }
+      
+    </script>
+    <script type="text/javascript" src="./proiect.js"></script>
+   
+
+  
 </body>
 </html>
